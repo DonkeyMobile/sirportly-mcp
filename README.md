@@ -8,7 +8,7 @@ MCP server for [Sirportly](https://sirportly.com) helpdesk integration with Kiro
 
 In Sirportly, go to **Admin → API Access** and create a new API token. You'll receive a **token** and **secret**.
 
-### 2. Kiro CLI configuration
+### 2a. Kiro CLI configuration
 
 Add to `~/.kiro/settings/mcp.json`:
 
@@ -27,6 +27,14 @@ Add to `~/.kiro/settings/mcp.json`:
   }
 }
 ```
+
+### 2b. Claude Code
+
+```shell
+claude mcp add-json sirportly '{"type":"stdio","command":"npx","args":["-y", "github:DonkeyMobile/sirportly-mcp"],"env":{"SIRPORTLY_URL": "https://kerkdienstgemist.sirportly.com","SIRPORTLY_TOKEN": "<your-token>","SIRPORTLY_SECRET": "<your-secret>"}}' --scope user
+```
+
+### Locally
 
 Alternatively, clone the repo and run locally:
 
