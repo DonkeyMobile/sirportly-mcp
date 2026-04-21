@@ -31,7 +31,7 @@ Add to `~/.kiro/settings/mcp.json`:
 ### 2b. Claude Code
 
 ```shell
-claude mcp add-json sirportly '{"type":"stdio","command":"npx","args":["-y", "github:DonkeyMobile/sirportly-mcp"],"env":{"SIRPORTLY_URL": "https://kerkdienstgemist.sirportly.com","SIRPORTLY_TOKEN": "<your-token>","SIRPORTLY_SECRET": "<your-secret>"}}'
+claude mcp add-json sirportly '{"type":"stdio","command":"npx","args":["-y", "github:DonkeyMobile/sirportly-mcp"],"env":{"SIRPORTLY_URL": "https://kerkdienstgemist.sirportly.com","SIRPORTLY_TOKEN": "<your-token>","SIRPORTLY_SECRET": "<your-secret>"}}' --scope user
 ```
 
 ### Locally
